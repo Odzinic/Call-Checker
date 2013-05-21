@@ -62,6 +62,7 @@ public class FindCalls extends Activity {
 		while (c.moveToNext()) {
 			num = c.getString(c.getColumnIndex(CallLog.Calls.NUMBER));// for
 																		// number
+			num.trim();
 			name = c.getString(c.getColumnIndex(CallLog.Calls.CACHED_NAME));// for
 																			// name
 			type = c.getInt(CallLog.Calls.OUTGOING_TYPE);// for type
