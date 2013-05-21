@@ -43,7 +43,6 @@ public class FindCalls extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
-	            // myWebLink.setComponent(new ComponentName("pkg","cls"));
 				String sUrl = String.format("https://www.google.ca/search?q=%s", Number);
 	             myWebLink.setData(Uri.parse(sUrl));
 	             startActivity(myWebLink);
