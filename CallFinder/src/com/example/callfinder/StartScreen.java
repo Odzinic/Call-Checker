@@ -21,7 +21,7 @@ public class StartScreen extends Activity {
 		Thread timer = new Thread() {
 			public void run() {
 				try {
-					sleep(2);
+					sleep(1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} finally {
