@@ -20,21 +20,17 @@
         <activity
             android:name="com.example.callfinder.FindCalls"
             android:label="@string/app_name" >
-
             <intent-filter>
-            <action android:name="com.example.callfinder.FINDCALLS" />
+                <action android:name="com.example.callfinder.FINDCALLS" />
 
-
-            <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            
         </activity>
         <activity
             android:name="com.example.callfinder.StartScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
             android:theme="@style/FullscreenTheme" >
-            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,6 +40,10 @@
         <activity
             android:name="com.example.callfinder.Popup"
             android:label="@string/title_activity_popup" >
+        </activity>
+        <activity
+            android:name="com.example.callfinder.SearchClass"
+            android:label="@string/title_activity_search_class" >
         </activity>
     </application>
 

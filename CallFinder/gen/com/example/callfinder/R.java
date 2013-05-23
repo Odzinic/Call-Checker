@@ -52,6 +52,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class menu {
         public static final int find_calls=0x7f090000;
         public static final int popup=0x7f090001;
+        public static final int search_class=0x7f090002;
     }
     public static final class raw {
         public static final int dog=0x7f040000;
@@ -63,6 +64,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int dummy_content=0x7f070005;
         public static final int hello_world=0x7f070002;
         public static final int title_activity_popup=0x7f070006;
+        public static final int title_activity_search_class=0x7f070007;
         public static final int title_activity_start_screen=0x7f070003;
     }
     public static final class style {
