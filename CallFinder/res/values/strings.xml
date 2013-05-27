@@ -9,5 +9,6 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_popup">Popup</string>
     <string name="title_activity_search_class">SearchClass</string>
+    <string name="title_activity_find_texts">FindTexts</string>
 
 </resources>

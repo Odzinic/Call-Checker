@@ -1,45 +1,40 @@
 package com.example.callfinder;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.TextView;
 
-public class Popup extends SearchClass  {
-	
-	
-	String sCountry, sWebsite;
+public class Popup extends SearchClass {
+
+	String sCountry, sWebsite, sChoice;
+	int nChoice;
 	ArrayAdapter<String> adapter;
 	country lstCountry = new country();
 	String[] arrsCountry = lstCountry.CountryList;
-	String[] arrsWebsite = {"Google", "YellowPages"};
+	String[] arrsWebsite = { "Google", "YellowPages" };
+	String[] arrsSort = { "Ascending", "Descending" };
+	String[] arrsLong = { "Delete", "Never Show Again" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		}
-	
-	
+	}
 
-	private void initialize(String[] arrsList) {
+	private void initializePopup(String[] arrsList) {
 		adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_dropdown_item, arrsList);
-		
-		}
-	
+
+	}
+
 	public String countryPopup(final String Number) {
-		initialize(arrsCountry);
+		initializePopup(arrsCountry);
 		new AlertDialog.Builder(this).setTitle("Select Country")
 				.setAdapter(adapter, new DialogInterface.OnClickListener() {
 
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						
+
 						sCountry = arrsCountry[which];
 
 						dialog.dismiss();
@@ -48,32 +43,62 @@ public class Popup extends SearchClass  {
 				}).create().show();
 		return sCountry;
 	}
-	
+
 	public String websitePopup(final String Number) {
-		initialize(arrsWebsite);
+		initializePopup(arrsWebsite);
 		new AlertDialog.Builder(this).setTitle("Select Website")
 				.setAdapter(adapter, new DialogInterface.OnClickListener() {
-					
 
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						
+
 						sWebsite = arrsWebsite[which];
 
 						dialog.dismiss();
-						if(sWebsite=="Google"){
-							searchGoogle(Number);	
-						}
-						else{
-						countryPopup(Number);
+						if (sWebsite == "Google") {
+							searchGoogle(Number);
+						} else {
+							countryPopup(Number);
 						}
 					}
 				}).create().show();
 		return sWebsite;
 	}
 
+	public String sortPopup() {
+		initializePopup(arrsSort);
+		new AlertDialog.Builder(this).setTitle("Select Website")
+		.setAdapter(adapter, new DialogInterface.OnClickListener() {
 
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+				if (arrsSort[which] == "Ascending") {
+					sChoice = "ASC";
+				} else {
+					sChoice = "DESC";
+				}
 
-	
+			}
+		}).create().show();
+
+		return sChoice;
+	}
+
+	public int longpressPopup() {
+		initializePopup(arrsLong);
+		new AlertDialog.Builder(this).setTitle("Select Option")
+				.setAdapter(adapter, new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						nChoice = which;
+						dialog.dismiss();
+
+					}
+
+				}).create().show();
+		return nChoice;
+	}
 
 }

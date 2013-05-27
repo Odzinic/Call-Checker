@@ -5,7 +5,9 @@
         android:title="Refresh"
         android:id="@+id/menuRefresh"
         android:icon="@drawable/icon"/>
-    <item android:title="label1"/>
+    <item 
+        android:title="Sort Order"
+        android:id="@+id/menuSort"/>
     <item android:title="label2"/>
     <item android:title="label3"/>
     <item android:title="label4"/>
