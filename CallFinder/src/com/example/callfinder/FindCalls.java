@@ -110,7 +110,7 @@ public class FindCalls extends Popup {
 		case (R.id.menuRefresh):
 				allCalls = Uri.parse("content://call_log/calls");
 				layout.removeAllViews();
-				layout.addView(tvTitle, lp);
+				//layout.addView(tvTitle, lp);
 				arrlst.clear();
 				checkLogs();
 				Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();

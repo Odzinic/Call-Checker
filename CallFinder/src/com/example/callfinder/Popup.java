@@ -10,8 +10,7 @@ public class Popup extends SearchClass {
 	String sCountry, sWebsite, sChoice;
 	int nChoice;
 	ArrayAdapter<String> adapter;
-	country lstCountry = new country();
-	String[] arrsCountry = lstCountry.CountryList;
+	String[] arrsCountry = country.CountryList;
 	String[] arrsWebsite = { "Google", "YellowPages" };
 	String[] arrsSort = { "Ascending", "Descending" };
 	String[] arrsLong = { "Delete", "Never Show Again" };

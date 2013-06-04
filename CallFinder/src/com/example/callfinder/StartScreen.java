@@ -26,7 +26,7 @@ public class StartScreen extends Activity {
 					e.printStackTrace();
 				} finally {
 					Intent openStartingPoint = new Intent(
-							"com.example.callfinder.FINDTEXTS");
+							"com.example.callfinder.MAINMENU");
 					startActivity(openStartingPoint);
 				}
 			}

@@ -37,24 +37,26 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int icon=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f090005;
-        public static final int button1=0x7f090004;
-        public static final int imageView1=0x7f090003;
-        public static final int ll1=0x7f090001;
-        public static final int menuRefresh=0x7f090006;
-        public static final int menuSort=0x7f090007;
+        public static final int action_settings=0x7f090006;
+        public static final int button1=0x7f090005;
+        public static final int imageView1=0x7f090004;
+        public static final int ll1=0x7f090002;
+        public static final int menuRefresh=0x7f090007;
+        public static final int menuSort=0x7f090008;
         public static final int scrollView1=0x7f090000;
-        public static final int textView1=0x7f090002;
+        public static final int textView1=0x7f090001;
+        public static final int thMainMenu=0x7f090003;
     }
     public static final class layout {
         public static final int activity_find_calls=0x7f030000;
-        public static final int activity_find_texts=0x7f030001;
+        public static final int activity_main_menu=0x7f030001;
         public static final int activity_start_screen=0x7f030002;
         public static final int popup=0x7f030003;
     }
     public static final class menu {
         public static final int find_texts=0x7f080000;
-        public static final int prefs_menu=0x7f080001;
+        public static final int main_menu=0x7f080001;
+        public static final int prefs_menu=0x7f080002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -63,6 +65,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int dummy_content=0x7f060005;
         public static final int hello_world=0x7f060002;
         public static final int title_activity_find_texts=0x7f060008;
+        public static final int title_activity_main_menu=0x7f060009;
         public static final int title_activity_popup=0x7f060006;
         public static final int title_activity_search_class=0x7f060007;
         public static final int title_activity_start_screen=0x7f060003;

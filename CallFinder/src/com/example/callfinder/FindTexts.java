@@ -107,7 +107,7 @@ public class FindTexts extends Popup {
 		case (R.id.menuRefresh):
 			allTexts = Uri.parse("content://call_log/calls");
 			layout.removeAllViews();
-			layout.addView(tvTitle, lp);
+			//layout.addView(tvTitle, lp);
 			arrlst.clear();
 			checkTexts();
 			Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();
@@ -116,7 +116,7 @@ public class FindTexts extends Popup {
 		case (R.id.menuSort):
 			sSort = sortPopup();
 			layout.removeAllViews();
-			layout.addView(tvTitle, lp);
+			//layout.addView(tvTitle, lp);
 			arrlst.clear();
 			checkTexts();
 			break;
